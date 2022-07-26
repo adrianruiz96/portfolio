@@ -15,7 +15,8 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue' // This allows us to use $router without TypeScript errors
+export default defineComponent ({
     name: 'Header',
     data() {
         return {
@@ -31,5 +32,5 @@ export default {
             }
         }
     }
-}
+})
 </script>
