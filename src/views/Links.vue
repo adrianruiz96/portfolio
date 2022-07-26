@@ -4,10 +4,10 @@
     <div class="mx-auto">
       <div class="flex flex-col">
         <div class="flex flex-wrap sm:flex-row flex-col py-6">
-          <h1 class="text-lg text-white">Adrián Ruiz Householder</h1>
+          <h1 class="text-lg text-white">Coming soon...</h1>
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col">
-          <h1 class="text-xs text-white">Web Developer</h1>
+          
         </div>
       </div>
     </div>
@@ -15,11 +15,11 @@
 </template>
 
 <script lang="ts">
-import Header from '../components/Header.vue'
-export default {
-  name: 'Home',
-  components: {
-    Header,
+  import Header from '../components/Header.vue'
+  export default {
+    name: 'Home',
+    components: {
+      Header,
+    }
   }
-}
 </script>
