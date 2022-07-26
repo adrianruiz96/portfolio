@@ -11,12 +11,20 @@
         <div class="flex flex-col">
             <div class="h-1 bg-gray-800 rounded overflow-hidden"></div>
         </div>
+        
     </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue' // This allows us to use $router without TypeScript errors
-export default defineComponent ({
+import {VueRouter} from 'vue-router/types/router'
+
+declare module 'vue/types/vue/' {
+    interface Vue {
+        $router: VueRouter
+    }
+}
+
+export default {
     name: 'Header',
     data() {
         return {
@@ -26,11 +34,11 @@ export default defineComponent ({
     methods: {
         goTo(link: String) {
             if (link === '/home') {
-                // this.$router.push({ name: 'Home' });
+                this.$router.push({ name: 'Home' });
             } else if (link === '/links') {
-                // this.$router.push({ name: 'Links' });
+                this.$router.push({ name: 'Links' });
             }
         }
     }
-})
+}
 </script>
