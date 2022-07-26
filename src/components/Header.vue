@@ -26,9 +26,9 @@ export default defineComponent ({
     methods: {
         goTo(link: String) {
             if (link === '/home') {
-                this.$router.push({ name: 'Home' });
+                // this.$router.push({ name: 'Home' });
             } else if (link === '/links') {
-                this.$router.push({ name: 'Links' });
+                // this.$router.push({ name: 'Links' });
             }
         }
     }
