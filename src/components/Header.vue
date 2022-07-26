@@ -16,14 +16,6 @@
 </template>
 
 <script lang="ts">
-import {VueRouter} from 'vue-router/types/router'
-
-declare module 'vue/types/vue/' {
-    interface Vue {
-        $router: VueRouter
-    }
-}
-
 export default {
     name: 'Header',
     data() {
