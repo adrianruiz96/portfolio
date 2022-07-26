@@ -1,17 +1,17 @@
-<script setup lang="ts">
-  import Home from './views/Home.vue'
-</script>
-
 <template>
-  <Home></Home>
+  <div class="bg-gray-900 dark:bg-gray-900 min-h-screen">
+    <div class="bg-gray-900 dark:bg-gray-900">
+      <router-view></router-view>  
+    </div>
+  </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html, body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 </style>
+
