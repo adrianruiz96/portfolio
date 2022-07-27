@@ -12,14 +12,19 @@
       </div>
     </div>
   </section>
+  <Footer></Footer>
 </template>
 
 <script lang="ts">
+import { ChartBarIcon } from '@heroicons/vue/solid'
 import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 export default {
   name: 'Home',
   components: {
     Header,
+    Footer,
+    ChartBarIcon
   }
 }
 </script>

@@ -12,14 +12,17 @@
       </div>
     </div>
   </section>
+  <Footer></Footer>
 </template>
 
 <script lang="ts">
   import Header from '../components/Header.vue'
+  import Footer from '../components/Footer.vue'
   export default {
     name: 'Home',
     components: {
       Header,
+      Footer,
     }
   }
 </script>
